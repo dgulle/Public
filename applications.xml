@@ -10,6 +10,7 @@
 		<Install>/S</Install>
 		<Uninstall>uninstall.exe</Uninstall>
 		<Path>C:\Program Files\NotepadPlusPlus</Path>
+		<DetectionFile>notepad++.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<Categories>IT Admin Tools</Categories>
 		<Assignments Customer="xenappblog">
@@ -109,6 +110,7 @@
 		<Install>/i ALLUSERS=1 /qn</Install>
 		<Uninstall>/X</Uninstall>
 		<Path>C:\Program Files\Mozilla Firefox</Path>
+		<DetectionFile>Firefox.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<Categories>IT Admin Tools</Categories>
 		<Assignments Customer="xenappblog">

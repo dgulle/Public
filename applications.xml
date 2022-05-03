@@ -103,7 +103,7 @@
 		<Vendor>Mozilla</Vendor>
 		<Product>Firefox</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen>Get-EvergreenApp -Name MozillaFirefox | Where-Object { $_.Architecture -eq "x64" -and $_.Channel -eq "LATEST_FIREFOX_VERSION" -and $_.Language -eq "en-US" -and $_.Type -eq "exe" } | Select-Object -First 1</Evergreen>
+		<Evergreen>Get-EvergreenApp -Name MozillaFirefox | Where-Object { $_.Architecture -eq "x64" -and $_.Channel -eq "LATEST_FIREFOX_VERSION" -and $_.Language -eq "en-US" -and $_.Type -eq "msi" } | Select-Object -First 1</Evergreen>
 		<DisplayName>Mozilla Firefox</DisplayName>
 		<Description>Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.</Description>
 		<Installer>msi</Installer>
@@ -143,7 +143,7 @@
 		<Vendor>Google</Vendor>
 		<Product>Chrome</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen>Get-EvergreenApp -Name GoogleChrome | Where-Object { $_.Architecture -eq "$Architecture" }</Evergreen>
+		<Evergreen>Get-EvergreenApp -Name GoogleChrome | Where-Object { $_.Architecture -eq "$Architecture" -and $_.Channel -eq "Stable"}</Evergreen>
 		<DisplayName>Google Chrome</DisplayName>
 		<Description>Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS, and Android where it is the default browser built into the OS.</Description>
 		<Installer>msi</Installer>

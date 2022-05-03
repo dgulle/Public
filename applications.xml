@@ -164,7 +164,7 @@
 		<Vendor>Adobe Systems</Vendor>
 		<Product>AcrobatReaderDC</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen>Get-EvergreenApp -Name AdobeAcrobatReaderDC | Where-Object { $_.Architecture -eq "x64" -and $_.Language -eq "English" }</Evergreen>
+		<Evergreen></Evergreen>
 		<DisplayName>Acrobat Reader DC</DisplayName>
 		<Description>Adobe Acrobat Reader DC software is the free, trusted global standard for viewing, printing, signing, sharing, and annotating PDFs. It's the only PDF viewer that can open and interact with all types of PDF content – including forms and multimedia.</Description>
 		<Installer>exe</Installer>
@@ -172,6 +172,7 @@
 		<Uninstall>/x</Uninstall>
 		<Path>C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader</Path>
 		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
 		<Categories>IT Admin Tools</Categories>
 		<Assignments Customer="xenappblog">
 			<Group>All Users</Group>

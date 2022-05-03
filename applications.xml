@@ -162,7 +162,7 @@
 	</Chrome>
 	<AcrobatReaderDC>
 		<Vendor>Adobe Systems</Vendor>
-		<Product>Adobe Acrobat Reader DC</Product>
+		<Product>AcrobatReaderDC</Product>
 		<Architecture>x64</Architecture>
 		<Evergreen></Evergreen>
 		<DisplayName>Adobe Acrobat Reader DC</DisplayName>

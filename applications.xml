@@ -160,12 +160,12 @@
 			<PilotGroup>Intune Pilot Users</PilotGroup>
 		</Assignments>
 	</Chrome>
-	<AcrobatReaderDC>
+	<Adobe Acrobat Reader DC>
 		<Vendor>Adobe Systems</Vendor>
-		<Product>AcrobatReaderDC</Product>
+		<Product>Adobe Acrobat Reader DC</Product>
 		<Architecture>x64</Architecture>
 		<Evergreen></Evergreen>
-		<DisplayName>Acrobat Reader DC</DisplayName>
+		<DisplayName>Adobe Acrobat Reader DC</DisplayName>
 		<Description>Adobe Acrobat Reader DC software is the free, trusted global standard for viewing, printing, signing, sharing, and annotating PDFs. It's the only PDF viewer that can open and interact with all types of PDF content – including forms and multimedia.</Description>
 		<Installer>exe</Installer>
 		<Install>-sfx_nu /sALL /msi EULA_ACCEPT=YES ENABLE_CHROMEEXT=0 DISABLE_BROWSER_INTEGRATION=1 ENABLE_OPTIMIZATION=YES ADD_THUMBNAILPREVIEW=0 DISABLEDESKTOPSHORTCUT=1 UPDATE_MODE=0 DISABLE_ARM_SERVICE_INSTALL=1</Install>
@@ -180,7 +180,7 @@
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
 		</Assignments>
-	</AcrobatReaderDC>
+	</Adobe Acrobat Reader DC>
 	<RemoteDesktopManagerFree>
 		<Vendor>Devolutions</Vendor>
 		<Product>RemoteDesktopManagerFree</Product>

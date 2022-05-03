@@ -160,7 +160,7 @@
 			<PilotGroup>Intune Pilot Users</PilotGroup>
 		</Assignments>
 	</Chrome>
-	<AdobeAcrobatReaderDC>
+	<AcrobatReaderDC>
 		<Vendor>Adobe Systems</Vendor>
 		<Product>Adobe Acrobat Reader DC</Product>
 		<Architecture>x64</Architecture>
@@ -180,7 +180,7 @@
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
 		</Assignments>
-	</AdobeAcrobatReader DC>
+	</AcrobatReaderDC>
 	<RemoteDesktopManagerFree>
 		<Vendor>Devolutions</Vendor>
 		<Product>RemoteDesktopManagerFree</Product>

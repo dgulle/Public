@@ -201,4 +201,25 @@
 			<PilotGroup>Intune Pilot Users</PilotGroup>
 		</Assignments>
 	</RemoteDesktopManagerFree>
+	<VisualStudioCode>
+		<Vendor>Microsoft Corporation</Vendor>
+		<Product>Microsoft Visual Studio Code</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Microsoft Visual Studio Code</DisplayName>
+		<Description>Microsoft Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Microsoft Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.</Description>
+		<Installer>exe</Installer>
+		<Install>/VERYSILENT /NORESTART</Install>
+		<Uninstall>"C:\Program Files\Microsoft VS Code\unins000.exe" /silent</Uninstall>
+		<Path>C:\Program Files\Microsoft VS Code</Path>
+		<DetectionFile>Code.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
+			<PilotGroup>Intune Pilot Users</PilotGroup>
+		</Assignments>
+	</VisualStudioCode>
 </Applications>

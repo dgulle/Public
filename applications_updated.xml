@@ -70,7 +70,7 @@
 		<Uninstall>/x</Uninstall>
 		<Path>C:\Program Files\7-Zip</Path>
 		<DetectionFile>7zG.exe</DetectionFile>
-		<Enabled>True</Enabled>
+		<Enabled>False</Enabled>
 		<WinGet>True</WinGet>
 		<Categories>Custom App Creation</Categories>
 		<Assignments>

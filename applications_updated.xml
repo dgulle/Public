@@ -1,9 +1,8 @@
 <Applications>
 	<NotePadPlusPlus>
 		<Vendor>NotepadPlusPlus Team</Vendor>
-		<Product>NotepadPlusPlus</Product>
+		<Product>Notepad++</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen>Get-EvergreenApp -Name NotepadPlusPlus | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.exe" }</Evergreen>
 		<DisplayName>Notepad++</DisplayName>
 		<Description>Notepad++ is a text and source code editor for use with Microsoft Windows. It supports tabbed editing, which allows working with multiple open files in a single window. The project's name comes from the C increment operator. Notepad++ is distributed as free software.</Description>
 		<Installer>exe</Installer>
@@ -12,8 +11,9 @@
 		<Path>C:\Program Files\NotepadPlusPlus</Path>
 		<DetectionFile>notepad++.exe</DetectionFile>
 		<Enabled>True</Enabled>
-		<Categories>IT Admin Tools</Categories>
-		<Assignments Customer="xenappblog">
+		<WinGet>True</WinGet>
+		<Categories>Custom App Creation</Categories>
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
@@ -23,7 +23,6 @@
 		<Vendor>ShareX Team</Vendor>
 		<Product>ShareX</Product>
 		<Architecture>x86</Architecture>
-		<Evergreen>Get-EvergreenApp -Name ShareX | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.exe" }</Evergreen>
 		<DisplayName>ShareX</DisplayName>
 		<Description>ShareX is a free and open-source screenshot and screencast utility for Microsoft Windows. It is published under the GNU General Public License. The project's source code is hosted at the GitHub code-sharing and code development platform.</Description>
 		<Installer>exe</Installer>
@@ -32,7 +31,8 @@
 		<Path>C:\Program Files\ShareX</Path>
 		<DetectionFile>ShareX.exe</DetectionFile>
 		<Enabled>True</Enabled>
-		<Categories>IT Admin Tools</Categories>
+		<WinGet>True</WinGet>
+		<Categories>Custom App Creation</Categories>
 		<Assignments Customer="xenappblog">
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
@@ -43,7 +43,6 @@
 		<Vendor>Tim Kosse</Vendor>
 		<Product>FileZilla</Product>
 		<Architecture>x86</Architecture>
-		<Evergreen>Get-EvergreenApp -Name FileZilla</Evergreen>
 		<DisplayName>FileZilla FTP Client</DisplayName>
 		<Description>FileZilla is a free software, cross-platform FTP application, consisting of FileZilla Client and FileZilla Server. Client binaries are available for Windows, Linux, and macOS, server binaries are available for Windows only.</Description>
 		<Installer>exe</Installer>
@@ -52,8 +51,9 @@
 		<Path>C:\Program Files\FileZilla FTP Client</Path>
 		<DetectionFile>FileZilla.exe</DetectionFile>
 		<Enabled>True</Enabled>
-		<Categories>IT Admin Tools</Categories>
-		<Assignments Customer="xenappblog">
+		<WinGet>True</WinGet>
+		<Categories>Custom App Creation</Categories>
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
@@ -63,7 +63,6 @@
 		<Vendor>7Zip</Vendor>
 		<Product>7Zip</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen>Get-EvergreenApp -Name 7zip | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.msi" }</Evergreen>
 		<DisplayName>7-Zip</DisplayName>
 		<Description>7-Zip is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as "archives". It is developed by Igor Pavlov and was first released in 1999. 7-Zip uses its own 7z archive format, but can read and write several other archive formats.</Description>
 		<Installer>msi</Installer>
@@ -72,8 +71,9 @@
 		<Path>C:\Program Files\7-Zip</Path>
 		<DetectionFile>7zG.exe</DetectionFile>
 		<Enabled>True</Enabled>
-		<Categories>IT Admin Tools</Categories>
-		<Assignments Customer="xenappblog">
+		<WinGet>True</WinGet>
+		<Categories>Custom App Creation</Categories>
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
@@ -81,9 +81,8 @@
 	</SevenZip>
 	<VideoLanVlcPlayer>
 		<Vendor>VideoLAN</Vendor>
-		<Product>VLCPlayer</Product>
+		<Product>VLC</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen>Get-EvergreenApp -Name VideoLanVlcPlayer | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.msi" }</Evergreen>
 		<DisplayName>VLC Player</DisplayName>
 		<Description>VLC media player is a free and open-source, portable, cross-platform media player software, and streaming media server developed by the VideoLAN project. VLC is available for desktop operating systems, and mobile platforms, such as Android, iOS, iPadOS, Tizen, Windows 10 Mobile, and Windows Phone.</Description>
 		<Installer>msi</Installer>
@@ -92,8 +91,9 @@
 		<Path>C:\Program Files (x86)\VLCPlayer</Path>
 		<DetectionFile>VLCPlayer.exe</DetectionFile>
 		<Enabled>True</Enabled>
-		<Categories>IT Admin Tools</Categories>
-		<Assignments Customer="xenappblog">
+		<WinGet>True</WinGet>
+		<Categories>Custom App Creation</Categories>
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
@@ -103,7 +103,6 @@
 		<Vendor>Mozilla</Vendor>
 		<Product>Firefox</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen>Get-EvergreenApp -Name MozillaFirefox | Where-Object { $_.Architecture -eq "x64" -and $_.Channel -eq "LATEST_FIREFOX_VERSION" -and $_.Language -eq "en-US" -and $_.Type -eq "msi" } | Select-Object -First 1</Evergreen>
 		<DisplayName>Mozilla Firefox</DisplayName>
 		<Description>Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.</Description>
 		<Installer>msi</Installer>
@@ -112,8 +111,9 @@
 		<Path>C:\Program Files\Mozilla Firefox</Path>
 		<Enabled>True</Enabled>
 		<DetectionFile>Firefox.exe</DetectionFile>
-		<Categories>IT Admin Tools</Categories>
-		<Assignments Customer="xenappblog">
+		<WinGet>True</WinGet>
+		<Categories>Custom App Creation</Categories>
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>All Devices</RequiredGroup>
 			<PilotGroup>Intune IT Pilot</PilotGroup>
@@ -123,7 +123,6 @@
 		<Vendor>Wireshark Team</Vendor>
 		<Product>WireShark</Product>
 		<Architecture>x86</Architecture>
-		<Evergreen></Evergreen>
 		<DisplayName>Wireshark</DisplayName>
 		<Description>Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. Originally named Ethereal, the project was renamed Wireshark in May 2006 due to trademark issues.</Description>
 		<Installer>exe</Installer>
@@ -132,8 +131,8 @@
 		<Path>C:\Program Files (x86)\Wireshark</Path>
 		<DetectionFile>Wireshark.exe</DetectionFile>
 		<Enabled>True</Enabled>
-		<PMPC>True</PMPC>
-		<Categories>IT Admin Tools</Categories>
+		<WinGet>True</WinGet>
+		<Categories>Custom App Creation</Categories>
 		<Assignments Customer="xenappblog">
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
@@ -144,7 +143,6 @@
 		<Vendor>Google</Vendor>
 		<Product>Chrome</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen>Get-EvergreenApp -Name GoogleChrome | Where-Object { $_.Architecture -eq "$Architecture" -and $_.Channel -eq "Stable"}</Evergreen>
 		<DisplayName>Google Chrome</DisplayName>
 		<Description>Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS, and Android where it is the default browser built into the OS.</Description>
 		<Installer>msi</Installer>
@@ -153,8 +151,9 @@
 		<Path>C:\Program Files\Google\Chrome\Application</Path>
 		<DetectionFile>Chrome.exe</DetectionFile>
 		<Enabled>True</Enabled>
-		<Categories>IT Admin Tools</Categories>
-		<Assignments Customer="xenappblog">
+		<WinGet>True</WinGet>
+		<Categories>Custom App Creation</Categories>
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
@@ -164,7 +163,6 @@
 		<Vendor>Adobe Systems</Vendor>
 		<Product>Adobe Acrobat Reader DC</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen></Evergreen>
 		<DisplayName>Adobe Acrobat Reader DC</DisplayName>
 		<Description>Adobe Acrobat Reader DC software is the free, trusted global standard for viewing, printing, signing, sharing, and annotating PDFs. It's the only PDF viewer that can open and interact with all types of PDF content – including forms and multimedia.</Description>
 		<Installer>exe</Installer>
@@ -174,8 +172,8 @@
 		<DetectionFile>AcroRd32.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>IT Admin Tools</Categories>
-		<Assignments Customer="xenappblog">
+		<Categories>Custom App Creation</Categories>
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
@@ -194,8 +192,8 @@
 		<Path>C:\Program Files (x86)\Devolutions\Remote Desktop Manager Free</Path>
 		<Enabled>False</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>IT Admin Tools</Categories>
-		<Assignments Customer="xenappblog">
+		<Categories>Custom App Creation</Categories>
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>
@@ -205,7 +203,6 @@
 		<Vendor>Microsoft Corporation</Vendor>
 		<Product>Microsoft Visual Studio Code</Product>
 		<Architecture>x64</Architecture>
-		<Evergreen></Evergreen>
 		<DisplayName>Microsoft Visual Studio Code</DisplayName>
 		<Description>Microsoft Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Microsoft Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.</Description>
 		<Installer>exe</Installer>
@@ -215,7 +212,7 @@
 		<DetectionFile>Code.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>IT Admin Tools</Categories>
+		<Categories>Custom App Creation</Categories>
 		<Assignments Customer="xenappblog">
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>

@@ -133,7 +133,7 @@
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
 		<Categories>Custom App Creation</Categories>
-		<Assignments Customer="xenappblog">
+		<Assignments>
 			<Group>All Users</Group>
 			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
 			<PilotGroup>Intune Pilot Users</PilotGroup>

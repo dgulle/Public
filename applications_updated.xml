@@ -109,8 +109,8 @@
 		<Install>/i ALLUSERS=1 /qn</Install>
 		<Uninstall>/X</Uninstall>
 		<Path>C:\Program Files\Mozilla Firefox</Path>
-		<Enabled>True</Enabled>
 		<DetectionFile>Firefox.exe</DetectionFile>
+		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
 		<Categories>Custom App Creation</Categories>
 		<Assignments>

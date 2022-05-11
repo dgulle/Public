@@ -12,12 +12,6 @@
 		<DetectionFile>notepad++.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</NotePadPlusPlus>
 	<ShareX>
 		<Vendor>ShareX Team</Vendor>
@@ -32,12 +26,6 @@
 		<DetectionFile>ShareX.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</ShareX>
 	<FileZilla>
 		<Vendor>Tim Kosse</Vendor>
@@ -52,12 +40,6 @@
 		<DetectionFile>FileZilla.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</FileZilla>
 	<SevenZip>
 		<Vendor>7Zip</Vendor>
@@ -72,12 +54,6 @@
 		<DetectionFile>7zG.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</SevenZip>
 	<VideoLanVlcPlayer>
 		<Vendor>VideoLAN</Vendor>
@@ -92,12 +68,6 @@
 		<DetectionFile>VLCPlayer.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</VideoLanVlcPlayer>
 	<MozillaFirefox>
 		<Vendor>Mozilla</Vendor>
@@ -112,12 +82,8 @@
 		<DetectionFile>Firefox.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
 			<RequiredGroup>All Devices</RequiredGroup>
 			<PilotGroup>Intune IT Pilot</PilotGroup>
-		</Assignments>
 	</MozillaFirefox>
 	<Wireshark>
 		<Vendor>Wireshark Team</Vendor>
@@ -132,12 +98,6 @@
 		<DetectionFile>Wireshark.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</Wireshark>
 	<Chrome>
 		<Vendor>Google</Vendor>
@@ -152,12 +112,6 @@
 		<DetectionFile>Chrome.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</Chrome>
 	<AcrobatReaderDC>
 		<Vendor>Adobe Systems</Vendor>
@@ -172,12 +126,6 @@
 		<DetectionFile>AcroRd32.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</AcrobatReaderDC>
 	<RemoteDesktopManagerFree>
 		<Vendor>Devolutions</Vendor>
@@ -192,12 +140,6 @@
 		<Path>C:\Program Files (x86)\Devolutions\Remote Desktop Manager Free</Path>
 		<Enabled>False</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments>
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</RemoteDesktopManagerFree>
 	<VisualStudioCode>
 		<Vendor>Microsoft Corporation</Vendor>
@@ -212,11 +154,61 @@
 		<DetectionFile>Code.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
-		<Categories>Custom App Creation</Categories>
-		<Assignments Customer="xenappblog">
-			<Group>All Users</Group>
-			<RequiredGroup>WIN - AAD PILOT DEVICE GROUP</RequiredGroup>
-			<PilotGroup>Intune Pilot Users</PilotGroup>
-		</Assignments>
 	</VisualStudioCode>
+	<Zoom>
+		<Vendor>Zoom</Vendor>
+		<Product>Zoom</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>Zoom</DisplayName>
+		<Description>Zoom is a cloud-based video communications app that allows you to set up virtual video and audio conferencing, webinars, live chats, screen-sharing, and other collaborative capabilities.</Description>
+		<Installer>msi</Installer>
+		<Install>/i /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\Zoom\bin</Path>
+		<DetectionFile>zoom.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+	</Zoom>
+	<iTunes>
+		<Vendor>Apple, Inc.</Vendor>
+		<Product>iTunes</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>iTunes</DisplayName>
+		<Description>iTunes is a media player developed by Apple that also can be used to communicate with Apple mobile devices</Description>
+		<Installer>exe</Installer>
+		<Install>REBOOT=ReallySupress /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\iTunes</Path>
+		<DetectionFile>iTunes.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+	</iTunes>
+	<AmazonCorretto>
+		<Vendor>Amazon</Vendor>
+		<Product>Amazon Corretto 18</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>Amazon Corretto 18</DisplayName>
+		<Description>No-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK).</Description>
+		<Installer>msi</Installer>
+		<Install>/i /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\Amazon Corretto\jdk18.0.0_37\bin</Path>
+		<DetectionFile>java.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+	</AmazonCorretto>
+	<GoogleEarth>
+		<Vendor>Google</Vendor>
+		<Product>Google Earth Pro</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>Google Earth Pro</DisplayName>
+		<Description>Google Earth lets you fly anywhere on Earth to view satellite imagery, maps, terrain, 3D buildings, from galaxies in outer space to the canyons of the ocean.</Description>
+		<Installer>exe</Installer>
+		<Install>OMAHA=1</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\Google\Google Earth Pro\client</Path>
+		<DetectionFile>googleearth.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+	</GoogleEarth>
 </Applications>

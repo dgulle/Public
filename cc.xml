@@ -1,0 +1,74 @@
+<Applications>
+	<NotePadPlusPlus>
+		<Vendor>NotepadPlusPlus Team</Vendor>
+		<Product>Notepad++</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>Notepad++</DisplayName>
+		<Description>Notepad++ is a text and source code editor for use with Microsoft Windows. It supports tabbed editing, which allows working with multiple open files in a single window. The project's name comes from the C increment operator. Notepad++ is distributed as free software.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files\NotepadPlusPlus</Path>
+		<DetectionFile>notepad++.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+	</NotePadPlusPlus>
+	<SevenZip>
+		<Vendor>7Zip</Vendor>
+		<Product>7Zip</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>7-Zip</DisplayName>
+		<Description>7-Zip is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as "archives". It is developed by Igor Pavlov and was first released in 1999. 7-Zip uses its own 7z archive format, but can read and write several other archive formats.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>"%ProgramFiles%\7-Zip\Uninstall.exe" /S</Uninstall>
+		<Path>C:\Program Files\7-Zip</Path>
+		<DetectionFile>7zG.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+	</SevenZip>
+	<MozillaFirefox>
+		<Vendor>Mozilla</Vendor>
+		<Product>Firefox</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>Mozilla Firefox</DisplayName>
+		<Description>Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/X</Uninstall>
+		<Path>C:\Program Files\Mozilla Firefox</Path>
+		<DetectionFile>Firefox.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+	</MozillaFirefox>
+	<Chrome>
+		<Vendor>Google</Vendor>
+		<Product>Chrome</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>Google Chrome</DisplayName>
+		<Description>Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS, and Android where it is the default browser built into the OS.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 NOGOOGLEUPDATEPING=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\Google\Chrome\Application</Path>
+		<DetectionFile>Chrome.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+	</Chrome>
+	<AcrobatReaderDC>
+		<Vendor>Adobe Systems</Vendor>
+		<Product>Adobe Acrobat Reader DC</Product>
+		<Architecture>x64</Architecture>
+		<DisplayName>Adobe Acrobat Reader DC</DisplayName>
+		<Description>Adobe Acrobat Reader DC software is the free, trusted global standard for viewing, printing, signing, sharing, and annotating PDFs. It's the only PDF viewer that can open and interact with all types of PDF content – including forms and multimedia.</Description>
+		<Installer>exe</Installer>
+		<Install>-sfx_nu /sALL /msi EULA_ACCEPT=YES ENABLE_CHROMEEXT=0 DISABLE_BROWSER_INTEGRATION=1 ENABLE_OPTIMIZATION=YES ADD_THUMBNAILPREVIEW=0 DISABLEDESKTOPSHORTCUT=1 UPDATE_MODE=0 DISABLE_ARM_SERVICE_INSTALL=1</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader</Path>
+		<DetectionFile>AcroRd32.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<WinGet>True</WinGet>
+	</AcrobatReaderDC>
+</Applications>

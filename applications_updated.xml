@@ -87,7 +87,7 @@
 	</Wireshark>
 	<Chrome>
 		<Vendor>Google</Vendor>
-		<Product>Chrome</Product>
+		<Product>Google Chrome</Product>
 		<Architecture>x64</Architecture>
 		<DisplayName>Google Chrome</DisplayName>
 		<Description>Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS, and Android where it is the default browser built into the OS.</Description>

@@ -61,9 +61,9 @@
 		<Architecture>x64</Architecture>
 		<DisplayName>Mozilla Firefox</DisplayName>
 		<Description>Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.</Description>
-		<Installer>msi</Installer>
-		<Install>/i ALLUSERS=1 /qn</Install>
-		<Uninstall>/X</Uninstall>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>*</Uninstall>
 		<Path>C:\Program Files\Mozilla Firefox</Path>
 		<DetectionFile>Firefox.exe</DetectionFile>
 		<Enabled>True</Enabled>

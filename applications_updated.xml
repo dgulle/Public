@@ -147,7 +147,7 @@
 		<Architecture>x64</Architecture>
 		<DisplayName>Zoom</DisplayName>
 		<Description>Zoom is a cloud-based video communications app that allows you to set up virtual video and audio conferencing, webinars, live chats, screen-sharing, and other collaborative capabilities.</Description>
-		<Installer>msi</Installer>
+		<Installer>exe</Installer>
 		<Install>/silent</Install>
 		<Uninstall>/x</Uninstall>
 		<Path>C:\Program Files\Zoom\bin</Path>

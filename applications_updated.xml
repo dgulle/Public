@@ -27,20 +27,6 @@
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
 	</ShareX>
-	<FileZilla>
-		<Vendor>Tim Kosse</Vendor>
-		<Product>FileZilla</Product>
-		<Architecture>x86</Architecture>
-		<DisplayName>FileZilla FTP Client</DisplayName>
-		<Description>FileZilla is a free software, cross-platform FTP application, consisting of FileZilla Client and FileZilla Server. Client binaries are available for Windows, Linux, and macOS, server binaries are available for Windows only.</Description>
-		<Installer>exe</Installer>
-		<Install>/S</Install>
-		<Uninstall>uninstall.exe</Uninstall>
-		<Path>C:\Program Files\FileZilla FTP Client</Path>
-		<DetectionFile>FileZilla.exe</DetectionFile>
-		<Enabled>True</Enabled>
-		<WinGet>True</WinGet>
-	</FileZilla>
 	<SevenZip>
 		<Vendor>7Zip</Vendor>
 		<Product>7Zip</Product>

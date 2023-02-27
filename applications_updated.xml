@@ -8,7 +8,7 @@
 		<Installer>exe</Installer>
 		<Install>/S</Install>
 		<Uninstall>uninstall.exe</Uninstall>
-		<Path>C:\Program Files\NotepadPlusPlus</Path>
+		<Path>C:\Program Files\Notepad++</Path>
 		<DetectionFile>notepad++.exe</DetectionFile>
 		<Enabled>True</Enabled>
 		<WinGet>True</WinGet>
